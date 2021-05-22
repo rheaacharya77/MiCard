@@ -12,11 +12,12 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.teal,
         body: SafeArea(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               CircleAvatar(
-                radius: 80.0,
-                backgroundColor: Colors.teal,
-                backgroundImage: AssetImage('images/avatar.png'),
+                radius: 65.0,
+                // backgroundColor: Colors.teal,
+                backgroundImage: AssetImage('images/avatars.jpg'),
               ),
               Text(
                 'Angela Carli',
@@ -37,15 +38,18 @@ class MyApp extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                 ),
               ),
+              SizedBox(
+                height: 20.0,
+                width: 250.0,
+                child: Divider(color: Colors.teal.shade100),
+              ),
               Card(
-                color: Colors.white,
                 margin: EdgeInsets.symmetric(
                   vertical: 10.0,
                   horizontal: 25.0,
                 ),
                 child: ListTile(
                   leading: Icon(Icons.phone, color: Colors.teal),
-                  
                   title: Text(
                     '+44 123 456 789',
                     style: TextStyle(
@@ -57,7 +61,6 @@ class MyApp extends StatelessWidget {
                 ),
               ),
               Card(
-                color: Colors.white,
                 margin: EdgeInsets.symmetric(
                   vertical: 10.0,
                   horizontal: 25.0,
